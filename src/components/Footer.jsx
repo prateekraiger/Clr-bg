@@ -28,9 +28,9 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-indigo-50 to-blue-50 py-8">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center">
-          {/* Logo - Left aligned */}
-          <div className="flex items-center space-x-2 px-2">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
             <img
               src="/logo.png"
               alt="ClrBg Logo"
@@ -41,7 +41,7 @@ const Footer = () => {
             </span>
           </div>
 
-          {/* Social links - Center aligned */}
+          {/* Social Links */}
           <div className="flex space-x-6">
             {socialLinks.map((link, index) => (
               <a
@@ -57,9 +57,9 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Copyright - Right aligned */}
-          <div>
-            <p className="text-lg text-blue-700 font-medium">© ClrBg 2025</p>
+          {/* Copyright */}
+          <div className="text-blue-700 text-center md:text-right text-lg font-medium">
+            © ClrBg 2025
           </div>
         </div>
       </div>
