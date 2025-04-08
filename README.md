@@ -19,7 +19,7 @@ ClrBg is a web application that allows users to upload images and remove their b
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/clr-bg.git
+   git clone https://github.com/prateekraiger/clr-bg.git
    cd clr-bg
    ```
 
