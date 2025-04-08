@@ -2,8 +2,6 @@ import React from "react";
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   const socialLinks = [
     {
       href: "https://www.linkedin.com/in/pratik-r1104/",
@@ -28,40 +26,39 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-blue-600 py-6">
+    <footer className="bg-gradient-to-r from-blue-400 via-sky-300 to-cyan-400 py-8">
       <div className="container mx-auto px-4">
-        {/* Logo row */}
-        <div className="flex justify-center mb-6">
-          <div className="flex items-center">
-            <div className="h-7 w-7 rounded bg-white flex items-center justify-center mr-2">
-              <span className="text-blue-600 font-bold text-sm">cb</span>
+        <div className="flex justify-between items-center">
+          {/* Logo - Left aligned */}
+          <div className="flex items-center space-x-4 px-2">
+            <div className="h-12 w-12 rounded-lg bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center shadow-md">
+              <span className="text-white font-extrabold text-xl tracking-wide">
+                cb
+              </span>
             </div>
-            <span className="font-bold text-lg text-white">clrbg</span>
+            <span className="font-bold text-xl text-white">ClrBg</span>
           </div>
-        </div>
 
+          {/* Social links - Center aligned */}
+          <div className="flex space-x-6">
+            {socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.label}
+                className="text-cyan-100 hover:text-white transition-transform transform hover:scale-110 hover:rotate-3 text-lg"
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
 
-        {/* Social links */}
-        <div className="flex justify-center space-x-4 mb-6">
-          {socialLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={link.label}
-              className="text-blue-200 hover:text-white transition-colors"
-            >
-              {link.icon}
-            </a>
-          ))}
-        </div>
-
-        {/* Copyright */}
-        <div className="text-center">
-          <p className="text-xs text-blue-200">
-            © {currentYear} Pratik. All rights reserved
-          </p>
+          {/* Copyright - Right aligned */}
+          <div>
+            <p className="text-lg text-cyan-100 font-medium">© ClrBg 2025</p>
+          </div>
         </div>
       </div>
     </footer>
