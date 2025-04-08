@@ -26,7 +26,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-r from-blue-400 via-sky-300 to-cyan-400 py-8">
+    <footer className="bg-gradient-to-r from-indigo-50 to-blue-50 py-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo - Left aligned */}
@@ -36,7 +36,7 @@ const Footer = () => {
               alt="ClrBg Logo"
               className="h-10 w-10 object-contain"
             />
-            <span className="font-bold text-xl text-white tracking-wide">
+            <span className="font-bold text-xl text-blue-700 tracking-wide">
               ClrBg
             </span>
           </div>
@@ -50,7 +50,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={link.label}
-                className="text-cyan-100 hover:text-white transition-transform transform hover:scale-110 hover:rotate-3 text-lg"
+                className="text-blue-600 hover:text-blue-800 transition-transform transform hover:scale-110 hover:rotate-3 text-lg"
               >
                 {link.icon}
               </a>
@@ -59,7 +59,7 @@ const Footer = () => {
 
           {/* Copyright - Right aligned */}
           <div>
-            <p className="text-lg text-cyan-100 font-medium">© ClrBg 2025</p>
+            <p className="text-lg text-blue-700 font-medium">© ClrBg 2025</p>
           </div>
         </div>
       </div>

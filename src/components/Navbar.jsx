@@ -9,18 +9,18 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-blue-400 via-sky-300 to-cyan-400 shadow-lg sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-indigo-50 to-blue-50 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo and Brand - Left aligned */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center space-x-2">
+            <a href="/" className="flex items-center space-x-3">
               <img
                 src="/logo.png"
                 alt="ClrBg Logo"
                 className="h-10 w-10 object-contain"
               />
-              <span className="text-white font-bold text-2xl tracking-wide">
+              <span className="text-blue-700 font-bold text-2xl tracking-wide">
                 ClrBg
               </span>
             </a>
@@ -30,13 +30,13 @@ function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#how-it-works"
-              className="text-cyan-100 hover:text-white font-medium transition"
+              className="text-blue-700 hover:text-blue-800 font-medium transition"
             >
               How It Works
             </a>
             <a
               href="#pricing"
-              className="text-cyan-100 hover:text-white font-medium transition"
+              className="text-blue-700 hover:text-blue-800 font-medium transition"
             >
               Pricing
             </a>
@@ -49,7 +49,7 @@ function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-white hover:text-cyan-200 focus:outline-none"
+              className="text-blue-700 hover:text-blue-800 focus:outline-none"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -64,14 +64,14 @@ function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
               href="#how-it-works"
-              className="text-cyan-100 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="text-blue-700 hover:text-blue-800 block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleMenu}
             >
               How It Works
             </a>
             <a
               href="#pricing"
-              className="text-cyan-100 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="text-blue-700 hover:text-blue-800 block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleMenu}
             >
               Pricing

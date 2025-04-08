@@ -11,7 +11,7 @@ import ErrorMessage from "./components/ErrorMessage";
 const API_KEY = import.meta.env.VITE_REMOVE_BG_API_KEY;
 
 function App() {
-  const [selectedImage , setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
   const [processedImage, setProcessedImage] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -92,15 +92,20 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-blue-50 to-indigo-100">
+    <div className="relative min-h-screen flex flex-col">
+      {/* Page Background */}
+      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]"></div>
+      </div>
+
       <Navbar />
       <main className="flex-grow">
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-5xl font-extrabold text-center text-indigo-800 mb-8">
+            <h1 className="text-5xl font-extrabold text-center text-blue-700 mb-8">
               Welcome to ClrBG
             </h1>
-            <p className="text-center text-lg text-gray-700 mb-12">
+            <p className="text-center text-lg text-gray-800 mb-12">
               Upload your image and remove the background in seconds with our
               AI-powered tool!
             </p>
