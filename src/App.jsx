@@ -11,7 +11,7 @@ import ErrorMessage from "./components/ErrorMessage";
 const API_KEY = import.meta.env.VITE_REMOVE_BG_API_KEY;
 
 function App() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage , setSelectedImage] = useState(null);
   const [processedImage, setProcessedImage] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
