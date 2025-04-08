@@ -40,7 +40,7 @@ function Navbar() {
             >
               Pricing
             </a>
-            <button className="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-purple-400 transition font-medium shadow-md hover:shadow-lg">
+            <button className="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition font-medium shadow-md hover:shadow-lg">
               Get Started
             </button>
           </div>
