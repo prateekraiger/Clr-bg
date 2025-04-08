@@ -30,13 +30,15 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo - Left aligned */}
-          <div className="flex items-center space-x-4 px-2">
-            <div className="h-12 w-12 rounded-lg bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center shadow-md">
-              <span className="text-white font-extrabold text-xl tracking-wide">
-                cb
-              </span>
-            </div>
-            <span className="font-bold text-xl text-white">ClrBg</span>
+          <div className="flex items-center space-x-2 px-2">
+            <img
+              src="/logo.png"
+              alt="ClrBg Logo"
+              className="h-10 w-10 object-contain"
+            />
+            <span className="font-bold text-xl text-white tracking-wide">
+              ClrBg
+            </span>
           </div>
 
           {/* Social links - Center aligned */}

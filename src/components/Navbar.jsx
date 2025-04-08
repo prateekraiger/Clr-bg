@@ -14,13 +14,13 @@ function Navbar() {
         <div className="flex justify-between h-16">
           {/* Logo and Brand - Left aligned */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center space-x-3">
-              <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center shadow-md">
-                <span className="text-white font-extrabold text-xl tracking-wide">
-                  cb
-                </span>
-              </div>
-              <span className="text-white font-semibold text-xl tracking-wide">
+            <a href="/" className="flex items-center space-x-2">
+              <img
+                src="/logo.png"
+                alt="ClrBg Logo"
+                className="h-10 w-10 object-contain"
+              />
+              <span className="text-white font-bold text-2xl tracking-wide">
                 ClrBg
               </span>
             </a>
