@@ -62,14 +62,13 @@ clr-bg/
 ├── tailwind.config.js    # TailwindCSS configuration
 └── vite.config.js        # Vite configuration
 ```
-
-## Screenshots
+ 
+## Screenshots 
 
 ### Home Page
 ![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
 
-### Background Removal
-![Background Removal](https://via.placeholder.com/800x400?text=Background+Removal)
+
 
 ## License
 
