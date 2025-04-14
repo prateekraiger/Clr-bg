@@ -11,7 +11,7 @@ ClrBg is a web application that allows users to upload images and remove their b
 
 ## Tech Stack
 
-- **Frontend**: React, TailwindCSS
+- **Frontend**: React, TailwindCSS 
 - **Backend API**: [Remove.bg API](https://www.remove.bg/api)
 - **Build Tool**: Vite
 
